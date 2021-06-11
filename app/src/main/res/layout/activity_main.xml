@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8E5DF"
+    android:orientation="vertical"
+    tools:context=".main.MainActivity">
+
+    <TextView
+        android:id="@+id/greeTingsUsers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="cursive"
+        android:text="Hello Word"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textPhrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="5dp"
+        android:background="#872000"
+        android:fontFamily="cursive"
+        android:text="  Um novo dia nasce no horizonte, e com ele, uma nova oportunidade de perder novamente.."
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_alignEnd="@id/textPhrase"
+        android:layout_alignStart="@+id/textPhrase"
+        android:layout_marginTop="16dp"
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:layout_below="@id/textPhrase"
+        android:layout_marginBottom="3dp"
+        android:background="@color/marromClaro" />
+
+
+    <ImageView
+        android:id="@+id/notas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Next"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="32dp"
+        android:layout_toLeftOf="@id/sun"
+        android:src="@drawable/ic_class"
+        app:tint="@color/marromClaro" />
+
+    <ImageView
+        android:id="@+id/sun"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Next"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="32dp"
+        android:src="@drawable/ic_sun"
+        app:tint="@color/marromClaro" />
+
+    <ImageView
+        android:id="@+id/day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Next"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="32dp"
+        android:layout_toRightOf="@+id/sun"
+        android:src="@drawable/ic_satisfied"
+        app:tint="@color/marromClaro" />
+
+
+    <Button
+        android:id="@+id/Next"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/view"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:backgroundTint="@color/white"
+        android:paddingTop="5dp"
+        android:text="Next"
+        android:textColor="#611802" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/Home"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic__home"
+            app:tint="@color/marromClaro" />
+
+        <ImageView
+            android:id="@+id/StoreCoffe"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_offee"
+            app:tint="@color/marromClaro" />
+
+        <ImageView
+            android:id="@+id/Store"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_book"
+            app:tint="@color/marromClaro" />
+
+        <ImageView
+            android:id="@+id/Account"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_account"
+            app:tint="@color/marromClaro" />
+    </LinearLayout>
+
+</RelativeLayout>
